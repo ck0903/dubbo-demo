@@ -8,7 +8,7 @@
     <dubbo:application name="demo-provider"  />
 
     <!-- 使用multicast广播注册中心暴露服务地址 -->
-    <dubbo:registry address="zookeeper://s100:24002" />
+    <dubbo:registry address="zookeeper://s100:24002?backup=s101:24002,s102:24002" />
 
     <!-- 用dubbo协议在20880端口暴露服务 -->
     <dubbo:protocol name="dubbo" port="20880" />

@@ -1,4 +1,6 @@
 ```
+值得注意的点，lib 下面必须包含所有的jar包，包括编译出来的jar 包
+
 java -Djava.ext.dirs=./lib  -cp demoprovider-1.0-SNAPSHOT.jar  com.hzgc.dubbo.demoprovider.DemoProvideMain
 
 或者如下：（脚本有问题，需要在bin 目录下执行，在其他目录下调用会有问题）
